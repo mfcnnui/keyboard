@@ -17,27 +17,27 @@ Vue.use(board)
 <keyboard ref="keyboard"></keyboard>
 
 ```
-## API文档说明
-# maxLength
+# API文档说明
+## maxLength
 密码长度对应密码框个数
 默认值：6
 类型：String
 
-# isEncrypt
+## isEncrypt
 是否使用内置密码加密
 默认值：false
 类型：布尔值
 
-## 回调函数
-# passInputDone(pwd,len)
+# 回调函数
+## passInputDone(pwd,len)
 输入密码长度达到最大值时触发
 参数1：pwd --返回的密码 【如果使用了内置md5加密返回加密后的密码，如果没使用则返回原始密码】注--你可以引入你想要的加密组件，并将原始密码传入你的加密组件来进行二次密码加密
 参数2：len --已输入的原始密码长度
- # passInputChange(pwd,len)
+## passInputChange(pwd,len)
 输入密码时(包括删除)触发
 参数：同passInputDone
 
-# findPass()
+## findPass()
 点击 “找回密码”时触发
 参数: 无
 
