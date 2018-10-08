@@ -1,4 +1,4 @@
-# 本demo仅供学习交流，没有经过完整的兼容性与bug测试！！！
+# 本demo仅供学习交流
 
 > A Vue.js project
 
