@@ -1,4 +1,4 @@
-# mf-test
+# 本demo仅供学习交流
 
 > A Vue.js project
 
