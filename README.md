@@ -6,10 +6,11 @@
 
 ``` bash
 # install dependencies
-npm install
+npm i vue-mf-keyboard
 
-# serve with hot reload at localhost:8080
-npm run dev
+#在入口文件main.js中引入并use
+import board from 'vue-mf-keyboard';
+Vue.use(board)
 
 # build for production with minification
 npm run build
