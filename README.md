@@ -18,9 +18,9 @@ Vue.use(board)
 
 ```
 # 界面预览
-![avatar](/assets/img/1.png)
-![avatar](/assets/img/2.png)
-![avatar](/assets/img/3.png)
+![avatar](/src/assets/img/1.png)
+![avatar](/src/assets/img/2.png)
+![avatar](/src/assets/img/3.png)
 
 # API文档说明
 ## maxLength
