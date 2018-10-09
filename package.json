@@ -1,14 +1,14 @@
 {
-  "name": "vue-keyboard",
-  "description": "A test vue project",
-  "version": "1.0.0",
+  "name": "vue-mf-keyboard",
+  "description": "完善readme.md",
+  "version": "1.0.1",
   "author": "mfcnnui <147980716@qq.com>",
   "license": "MIT",
   "private": false,
   "main": "dist/vue-keyboard.js", 
   "repository": { 
     "type": "git",
-    "url": "https://github.com/leichangchun/vue-area-select"
+    "url": "https://github.com/mfcnnui/keyboard.git"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
