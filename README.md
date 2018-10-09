@@ -17,6 +17,11 @@ Vue.use(board)
 <keyboard :isEncrypt='true' @passInputDone='getPwd' @passInputChange='passInputChange' @maskHandle='maskHandle' @findPass='findPass' ref="keyboard"></keyboard>
 
 ```
+# 界面预览
+![avatar](/assets/img/1.png)
+![avatar](/assets/img/2.png)
+![avatar](/assets/img/3.png)
+
 # API文档说明
 ## maxLength
 * 密码长度对应密码框个数
