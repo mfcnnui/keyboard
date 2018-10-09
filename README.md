@@ -7,10 +7,10 @@
 
 ``` bash
 # install dependencies
-npm i vue-mf-keyboard
+npm i mf-vue-keyboard
 
 #在入口文件main.js中引入并use
-import board from 'vue-mf-keyboard';
+import board from 'mf-vue-keyboard';
 Vue.use(board)
 
 在组件中使用
