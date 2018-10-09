@@ -47,9 +47,9 @@ Vue.use(board)
 ### ps: 以下所有的ref值默认定义为“keyboard”
 
 ## showKeyboard()
-### 作用：唤起密码键盘界面
-### 使用方法： this.$refs.keyboard.showKeyboard();
-### 使用场景：在父### 组件里的某一个事件中唤起密码键盘，比如你将进行密码的验证
+1. 作用：唤起密码键盘界面
+2. 使用方法： this.$refs.keyboard.showKeyboard();
+3. 使用场景：在父组件里的某一个事件中唤起密码键盘，比如你将进行密码的验证
 
 ## hideKeyboard()
 ### 作用：隐藏密码键盘，并且将英文键盘设置为小写状态和设置键盘类型为数字
