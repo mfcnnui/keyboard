@@ -38,9 +38,13 @@ Vue.use(board)
 * 输入密码时(包括删除)触发
 * 参数：同passInputDone
 
-## findPass()
+## findPass(e)
 * 点击 “找回密码”时触发
-* 参数: 无
+* 参数: event对象
+
+## maskHandle(e)
+* 点击蒙层时触发
+* 参数: event对象
 
 # refs
 * 组件内部提供了一些方法需要通过在组件定义ref属性，并通过this.$refs.xxx(xxx为你定义的值)来调起
