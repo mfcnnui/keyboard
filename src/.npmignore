@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+src/
+npm-debug.log
+yarn-error.log
+webpack.config.js
+.editorconfig
+.gitignore
+.babelrc
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
