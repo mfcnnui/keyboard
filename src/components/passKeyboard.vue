@@ -1,6 +1,6 @@
 <template>
   <div class="container" v-show="visible">
-    <div class="keyboard-mask-box" ></div>
+    <div class="keyboard-mask-box" @click="maskClick"></div>
     <div class="keyboard-container">
       <div class="password-box" >
         <div class="title-box">请输入交易密码</div>
@@ -358,7 +358,6 @@ export default {
       let curPwd = "";
       if (newVal.length == this.maxLength * 1) {
         curPwd = this.isEncrypt ? hex_md5(this.password) : this.password;
-        this.loading = true;
         this.$emit("passInputDone", curPwd, this.password.length);
       }
       if (newVal.length > this.maxLength * 1) {
@@ -447,6 +446,27 @@ export default {
     hideKeyboard() {
       this.visible = false;
       this.lowerCaseType = 0;
+      this.keyboardType = 1;
+    },
+    //清空密码
+    clearPassword(){
+      this.password = '';
+    },
+    //初始化loading状态
+    hideLoading(){
+      this.loading = false;
+    },
+    //显示内置loading状态
+    showLoading(){
+      this.loading = true;
+    },
+    //显示密码键盘
+    showKeyboard(){
+      this.visible = true;
+    },
+    //点击了蒙层
+    maskClick(e){
+      this.$emit("maskHandle",e);
     }
   }
 };

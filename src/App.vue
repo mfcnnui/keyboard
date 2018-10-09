@@ -1,6 +1,6 @@
 <template>
   <div id="app" >
-    <button @click="showKeyboard">1111</button>
+    <button style="padding: 10px 15px; margin-top: 30px;" @click="showKeyboard">密码验证</button>
     <keyboard :isEncrypt='true' @passInputDone='getPwd' @passInputChange='passInputChange' @findPass='findPwd' ref="keyboard"></keyboard>
   </div>
 </template>
@@ -16,18 +16,18 @@ export default {
     getPwd(pwd,length){
       console.log(pwd);
       console.log(length);
+      this.$refs.keyboard.showLoading();
       setTimeout(() => {
-        this.$refs.keyboard.loading = false;
-        console.log('验证成功');
-        this.$refs.keyboard.visible = false;
-        this.$refs.keyboard.password = '';
+        this.$refs.keyboard.hideLoading();
+        this.$refs.keyboard.hideKeyboard();
+        this.$refs.keyboard.clearPassword();
       }, 2e3);
     },
     findPwd(e){
       console.log(e);
     },
     showKeyboard(){
-      this.$refs.keyboard.visible = true;
+      this.$refs.keyboard.showKeyboard();
     },
     passInputChange(pwd,length){
       console.log(pwd);
