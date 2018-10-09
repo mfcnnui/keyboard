@@ -41,6 +41,35 @@ Vue.use(board)
 点击 “找回密码”时触发
 参数: 无
 
+# refs
+组件内部提供了一些方法需要通过在组件定义ref属性，并通过this.$refs.xxx(xxx为你定义的值)来调起
+ps: 以下所有的ref值默认定义为“keyboard”
+
+## showKeyboard()
+作用：唤起密码键盘界面
+使用方法： this.$refs.keyboard.showKeyboard();
+使用场景：在父组件里的某一个事件中唤起密码键盘，比如你将进行密码的验证
+
+## hideKeyboard()
+作用：隐藏密码键盘，并且将英文键盘设置为小写状态和设置键盘类型为数字
+作用方法：this.$refs.keyboard.hideKeyboard();
+使用场景：你应当知道在适当的时候隐藏掉密码键盘，并初始化英文键盘为小写状态和键盘类型设置为数字
+
+## showLoading()
+作用：显示内置的loading动画，当然你也可以不选择使用内置的等待动画，使用符合你业务需求的定义等待动画
+作用方法：this.$refs.keyboard.showLoading();
+使用场景：你或许需要在passInputDone()回调开始时调起loading状态,在密码验证接口完成过后关闭它
+
+## hideLoading()
+作用：隐藏内置的loading动画
+作用方法：this.$refs.keyboard.hideLoading();
+使用场景：你或许需要在passInputDone()回调中的密码验证接口完成过后调用它
+
+## clearPassword()
+作用：初始化密码长度为0
+作用方法：this.$refs.keyboard.clearPassword();
+使用场景：你可能需要在隐藏密码键盘的时候清空密码
+
 详细的使用方法可以参考本demo的/src/App.vue
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
