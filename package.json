@@ -1,7 +1,7 @@
 {
-  "name": "vue-mf-keyboard",
-  "description": "新增.npmignor文件，并发布新版本",
-  "version": "1.0.4",
+  "name": "mf-vue-keyboard",
+  "description": "初始化",
+  "version": "1.0.0",
   "author": "mfcnnui <147980716@qq.com>",
   "license": "MIT",
   "private": false,
