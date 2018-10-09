@@ -14,7 +14,7 @@ import board from 'vue-mf-keyboard';
 Vue.use(board)
 
 在组件中使用
-<keyboard ref="keyboard"></keyboard>
+<keyboard :isEncrypt='true' @passInputDone='getPwd' @passInputChange='passInputChange' @findPass='findPwd' ref="keyboard"></keyboard>
 
 ```
 # API文档说明
