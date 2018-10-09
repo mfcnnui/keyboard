@@ -1,7 +1,7 @@
 {
   "name": "vue-mf-keyboard",
-  "description": "进一步完善readme.md，新增部分组件方法，且提供调用方式",
-  "version": "1.0.2",
+  "description": "新增.npmignor文件，并发布新版本",
+  "version": "1.0.4",
   "author": "mfcnnui <147980716@qq.com>",
   "license": "MIT",
   "private": false,
