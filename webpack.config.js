@@ -2,11 +2,13 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/main.js',//本地测试时使用此配置
+  // entry: './src/index.js',//发布到npm时使用此配置
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'vue-keyboard.js',
+    filename: 'build.js',//本地测试时使用此配置
+    // filename: 'vue-keyboard.js',//发布到npm时使用此配置
     library:'vue-keyboard',   //reqire引入的名字
     libraryTarget:'umd',
     umdNamedDefine:true
